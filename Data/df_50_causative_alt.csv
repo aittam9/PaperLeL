@@ -1,0 +1,101 @@
+Sent.id,Sent.,Lemma,Token.id,Use,Token.Form
+0,Tony broke the window.,break,1,tr,broke
+1,The window broke.,break,2,intr,broke
+2,Tony bent the rod.,bend,1,tr,bent
+3,The trees bend during windy days.,bend,2,intr,bend
+4,Jennifer baked the potatoes.,bake,1,tr,baked
+5,The potatoes baked.,bake,2,intr,baked
+6,Bill dried the clothes.,dry,1,tr,dried
+7,The clothes dried.,dry,2,intr,dried
+8,They increased the mechanics' pay by 20 percent.,increase,1,tr,increased
+9,The size of the universe is increasing.,increase,6,intr,increasing
+10,He shattered the mirror against his foreheard.,shatter,1,tr,shattered
+11,There was a rat-at-tat of machinegun fire and several windows shattered.,shatter,14,intr,shattered
+12,"The War was over, Rutherford split the atom on 3 January 1919, and the workers' war had just begun.",split,6,tr,split
+13,Mr. Gonzalez also has split with the left in reaffirming Spain's NATO commitment and in renewing a defense treaty with the U.S.,split,4,intr,split
+14,Thomas folded his napkin neatly again.,fold,1,tr,folded
+15,"Contoured metallic parts glided and folded out over me, emerging from the wall and pushing me back in with them.",fold,5,intr,folded
+16,She melted another lump of butter and stirred in the flour.,melt,1,tr,melted
+17,Butter melted to liquid in half an hour if left out of the fridge.,melt,1,intr,melted
+18,The Unionists in general decreased the number of their candidates.,decrease,4,tr,decreased
+19,The winter population has decreased in recent years.,decrease,4,intr,decreased
+20,The weakness of the pound helped inflate the figures in sterling.,inflate,6,tr,inflate
+21,The mat inflate quickly after the pumping.,inflate,2,intr,inflate
+22,Acid water trouble corrodes pipework.,corrode,3,tr,corrodes
+23,"As a result, steel reinforcing in the concrete has corroded.",corrode,10,intr,corroded
+24,A tug at his trouser leg awakened him from his reverie.,awaken,6,tr,awakened
+25,He awakens every day early in the morning.,awaken,1,intr,awakens
+26,Domestic road tripping is a great way to flex your children's travel muscles.,flex,8,tr,flex
+27,"Again, they flex up and down.",flex,3,intr,flex
+28,"We just stomp on the dry seed-stalks, then roll back the mat and sweep up the seed.",roll,11,tr,roll
+29,I roll over and go back to sleep.,roll,1,intr,roll
+30,Then I just drift the kite when I don't need it.,drift,3,tr,drift
+31,"All processes, left to themselves, drift from order into chaos.",drift,7,intr,drift
+32,"I mean, anyone can drop a dog.",drop,5,tr,drop
+33,Yes bank returns would drop.,drop,4,intr,drop
+34,We boiled water and served coffee to them.,boil,1,tr,boiled
+35,The water boiled in a less than five minutes.,boil,2,intr,boiled
+36,Josie also makes an amazing stuffing when she roasts chicken.,roast,8,tr,roasts
+37,"Inside, a chicken roasted slowly in the heavy iron oven.",roast,4,intr,roasted
+38,The water in the pot steams the veggies inside.,steam,5,tr,steams
+39,Huge amounts of coolant steamed out from the engine.,steam,4,intr,steamed
+40,The navigator enlarged the image upon the three-dimensional screen.,enlarge,2,tr,enlarged
+41,The brain had enlarged later in order to exploit the tool-making capacities of hands that were now freed from the task of locomotion.,enlarge,3,intr,enlarged
+42,Mr. Hammond worries that old age and the flightiness of youth will diminish the ranks of the East Anglian group that keeps the Aslacton bells pealing.,diminish,12,tr,diminish
+43,Quite simply her bargaining power has diminished. ,diminish,6,intr,diminished
+44,Your response to Frank solidifies my thoughts.,solidify,4,tr,solidifies
+45,"As it cools, over the years, the magma slowly solidifies and forms crystals.",solidify,11,intr,solidifies
+46,"The frost freezes the water, not the vine.",freeze,2,tr,freezes
+47,The river Thames in London froze right up to Westminster.,freeze,5,intr,froze
+48,He defrosts a chicken in the tumble dryer and eats deep-pan pizza with marmalade and Rice Krispies for breakfast.,defrost,1,tr,defrosts
+49,"The turkey was defrosting nicely in the garage, the vegetables all prepared.",defrost,3,intr,defrosting
+50,"Indeed, Henry V used to burn them alive.",burn,6,tr,burn
+51,The flames still burn after a week.,burn,3,intr,burn
+52,"They thicken the curd, giving it extra body and making it more stable when spread into flan cases or flat, open plate pies.",thicken,1,tr,thicken
+53,"The snow thickened as night fell, piling around their shelter and hissing at the fire.",thicken,2,intr,thickened
+54,The horse softens food before swallowing by chewing the food between his molars with a sideways grinding action of the lower jaw.,soften,2,tr,softens
+55,"Inside, her organs twined about each other unnaturally, her bones softened and grew functionless knobs that breached her skin.",soften,12,intr,softened
+56,I hurt him so bad he's gone to hospital.,hurt,1,tr,hurt
+57,My throat hurts when I smell perfume.,hurt,2,intr,hurts
+58,Joe drains the last of his water and quietly belches.,drain,1,tr,drains
+59,The water simply drains into your kiln.,drain,3,intr,drains
+60,Their criticism sharpens the proponent side of the issue.,sharpen,2,tr,sharpens
+61,His voice sharpens with every word.,sharpen,2,intr,sharpens
+62,Flora crumbled a soda cracker in her hands.,crumble,1,tr,crumbled
+63,She crumbled to the floor in an ungraceful heap.,crumble,1,intr,crumbled
+64,The robot has also improved the quality of the packs.,improve,4,tr,improved
+65,"He has improved this year, and it shows in his average.",improve,2,intr,improved
+66,I broadened my focus to include a gravel road running east-west.,broaden,1,tr,broadened
+67,"Their horizon never lifted, never broadened.",broaden,6,intr,broadened
+68,Water dissolves these salts and allows uptake by the roots.,dissolve,1,tr,dissolves
+69,Carbon dioxide also dissolves to form an acid.,dissolve,3,intr,dissolves
+70,These measures ameliorated some of the disadvantages of the retrospective design.,ameliorate,2,tr,ameliorated
+71,"When he started to take prozac, things gradually ameliorated.",ameliorate,9,intr,ameliorated
+72,His behaviour degenerates the standards of debate.,degenerate,2,tr,degenerates
+73,My vision degenerated pretty quickly after the accident.,degenerate,2,intr,degenerated
+74,Lola twisted her nipples roughly with reckless hands.,twist,1,tr,twisted
+75,Her mouth twisted fondly at the corners.,twist,2,intr,twisted
+76,He turns the sea into dry land.,turn,1,tr,turns
+77,Maria turned around and quickly went back about her business.,turn,1,intr,turned
+78,"She fractures the child's skull, ribs and legs.",fracture,1,tr,fractures
+79,My leg fractured during the match.,fracture,2,intr,fractured
+80,Immediately loosen the tart from the pan using a metal spatula.,loosen,1,tr,loosen
+81,The wrappings loosened and began to fall away.,loosen,2,intr,loosened
+82,The blood deepened to a painful intensity.,deepen,2,tr,deepened
+83,It may slightly deepen the natural colour.,deepen,3,intr,deepen
+84,I narrowed the focus to two possible directions.,narrow,1,tr,narrowed
+85,Her eyes narrowed and her nostrils flared.,narrow,2,intr,narrowed
+86,He then unbuckled his black belt and slid his shoes off.,slide,7,tr,slid
+87,The doors slid closed and cut him from her sight.,slide,2,intr,slid
+88,"He swings the door open, smiling apprehensively.",swing,1,tr,swings
+89,Montgomery swings away with a leg kick that misses.,swing,1,intr,swings
+90,"Manchester City kept possession, rotating the ball looking to create spaces.",rotate,5,tr,rotating
+91,It's also when dealers rotate to other tables.,rotate,5,intr,rotate
+92,Coulé is gliding the blade along the adversary's without pressure of scraping.,glide,2,tr,gliding
+93,Participants glide down a slope while spectators look on.,glide,1,intr,glide
+94,Satterlee revolved the information angrily around his mind.,revolve,1,tr,revolved
+95,Many revolve around the latest trendy silver bullet.,revolve,1,intr,revolve
+96,I smash it into boulders.,smash,1,tr,smash
+97,A tentacle smashes into Koopark's head.,smash,2,intr,smashes
+98,We macerated for about 4 hours and then pressed the grapes very gently.,macerate,1,tr,macerated
+99,The grapes macerated for 24 hours in stainless steel tanks before being slowly pressed.,macerate,2,intr,macerated
