@@ -12,6 +12,11 @@ from sklearn.decomposition import SparsePCA
 import joblib 
 import torch 
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.colors as mcolors
+
+
 
 """Utils module containing all the functions used for the experiments."""
 
@@ -348,3 +353,91 @@ def train_regressor(model_spaces:[dict,pd.DataFrame],target_sspace:pd.DataFrame,
     
     return regr
 
+def visualize_properties_hm(predictions: pd.DataFrame):
+    plt.figure(figsize=(14, 12))
+
+    # # colormap
+    # colors1 = plt.cm.gist_gray(np.linspace(0., 1, 128))
+    # colors2 = plt.cm.gist_yarg(np.linspace(0, 1, 128))
+
+    # # combine them and build a new colormap
+    # colors = np.vstack((colors1, colors2))
+    # divergentGrays = mcolors.LinearSegmentedColormap.from_list('my_colormap', colors)
+
+    maxv = 0
+
+    for mat in predictions.values:    
+        maxv = max(maxv, max(mat.max(), - mat.min())) # si può eliminare con 'Blues'
+
+    #heatmap object
+    heatmap = plt.imshow(predictions.values, cmap = 'Blues', 
+                        interpolation= 'nearest',
+                        aspect='auto' )
+
+
+    plt.tick_params(bottom=False, top=False, left=False, right=False, 
+                    labelsize=12)  # eliminiamo i tick 
+
+    plt.yticks(range(0,len(predictions.index)), predictions.index, fontsize=12)
+
+    plt.tick_params(labelbottom = False, labeltop = True)
+    plt.xticks(range(0,len(predictions.columns)), predictions.columns, rotation = 'vertical')
+    plt.show()
+
+#helper function  to separate two 
+def split_subspaces(predictions:pd.DataFrame, properties:list):
+    transitive_use = []
+    intransitive_use = []
+
+    transitive_use_ids = []
+    intransitive_use_ids = []
+    
+    for i, e in enumerate([i for i in predictions.values]):
+        if  i % 2 == 0:
+            transitive_use.append(e)
+        else:
+            intransitive_use.append(e)
+    for n, id in enumerate(predictions.index):
+        if n % 2 == 0:
+            transitive_use_ids.append(id)
+        else:
+            intransitive_use_ids.append(id)
+    #create dataframes and normalize between 0 and 1
+    transitive_use_df = pd.DataFrame(transitive_use, columns = properties, index =transitive_use_ids )
+    
+    intransitive_use_df = pd.DataFrame(intransitive_use, columns = properties, index =intransitive_use_ids )  
+    
+    return transitive_use_df, intransitive_use_df
+
+
+def avg_predicted_properties(df_trans: pd.DataFrame, df_intrans:pd.DataFrame, show_figure = True):
+    # dataframe containing properties means for both transitive and intransitive use 
+    mean_comparison = df_trans.mean().to_frame(name = 'Tran').merge(
+                                df_intrans.mean().to_frame(name = 'Intr'), 
+                                left_index= True, right_index= True).T
+    if show_figure:
+        # plot of properties means comparison
+        plt.figure(figsize= (12,9))
+        ax = sns.heatmap(mean_comparison, cmap = 'Blues',
+                        square = True, cbar = False, annot = True
+                        )
+        # remove ticks and set position and orientation for ticks label
+        ax.tick_params(labeltop = True, labelbottom = False, rotation = 90, 
+                        labelsize = 12, bottom = False, left = False)
+        plt.show()
+        return mean_comparison
+    else:
+        return mean_comparison
+    
+#helper function to get a df with predited values
+def get_predictions(embeddings: dict,regressor, properties:list):
+    #make predicitons
+    y = np.array(list(embeddings.values()))
+    y_hat = regressor.predict(y)
+
+    #make predictions dataframe
+    predictions_df = pd.DataFrame(y_hat, 
+                        columns = properties).set_axis(list(embeddings.keys())
+                        ).apply(lambda x:(x-x.min())/(x.max()-x.min()))
+    return predictions_df
+    
