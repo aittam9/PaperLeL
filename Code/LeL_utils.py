@@ -16,6 +16,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.colors as mcolors
 
+from tqdm.auto import tqdm
+
 
 
 """Utils module containing all the functions used for the experiments."""
